@@ -1,5 +1,7 @@
-mahsulotlar = ['un', "yog'", "sovun", 'tuxum', 'piyoz',
-               'kartoshka', 'olma', 'banan', 'uzum', 'qovun']
+"""
+if else operatorlari bilan ishlash
+"""
+mahsulotlar = ['un', "yog'", "sovun", 'tuxum', 'piyoz','kartoshka', 'olma', 'banan', 'uzum', 'qovun']
 
 savat = []
 for n in range(5):
