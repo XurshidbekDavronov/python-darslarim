@@ -71,18 +71,18 @@ Created on Sat Jul  3 09:04:47 2021
     #}
 #for k,q in sorted(izohli_lugat.items()):
  #   print(f"{k.upper()} - {q}\n")
-dunyo_davlatlari ={
-    'AQSH':'Vashington',
-    'Italiya':'Rim',
-    "O'zbekiston":'Toshkent',
-    "Qizg'iziston":'Bishkek',
-    'Kanada':'Ottava',
-    'Germaniya':'Berlin',
-    'Malayziya':'Kuala Lumpur',
-    'Xitoy':'Pekin',
-    'Yaponiya':'tokio',
-    'Fransiya':'Parij'
-    }
+#dunyo_davlatlari ={
+ #   'AQSH':'Vashington',
+  #  'Italiya':'Rim',
+  #  "O'zbekiston":'Toshkent',
+  #  "Qizg'iziston":'Bishkek',
+  #  'Kanada':'Ottava',
+  #  'Germaniya':'Berlin',
+  #  'Malayziya':'Kuala Lumpur',
+  #  'Xitoy':'Pekin',
+  #  'Yaponiya':'tokio',
+  #  'Fransiya':'Parij'
+  #  }
 #print('Dunyo davlatlari:')
 #for davlat in sorted(dunyo_davlatlari):
 #    print(davlat.upper())
@@ -90,10 +90,39 @@ dunyo_davlatlari ={
 #print('\nDavlatlar poytaxtlari:')
 #for poytaxt in sorted(dunyo_davlatlari.values()):
 #    print(poytaxt.title())
-davlat=input("Qaysi davlatning poytaxtini bilishni istaysiz?: ").title()
-poytaxt=dunyo_davlatlari.get(davlat)
-if poytaxt==None:
-        print(f"Kechirasiz,{davlat.title()} poytaxti haqida bizda ma'lumot yo'q")
-else:
-        print(f"{davlat.title()}ning poytaxti {poytaxt} shahri")
+#davlat=input("Qaysi davlatning poytaxtini bilishni istaysiz?: ").title()
+#poytaxt=dunyo_davlatlari.get(davlat)
+#if poytaxt==None:
+ #       print(f"Kechirasiz,{davlat.title()} poytaxti haqida bizda ma'lumot yo'q")
+#else:
+ #       print(f"{davlat.title()}ning poytaxti {poytaxt} shahri")
+taomlar = {
+     'osh':15000,
+     'mastava':8000,
+     "sho`rva": 15000,
+     "lag'mon":12000,
+     'somsa': 2000,
+     'bifshteks': 12000,
+     'norin': 15000,
+     'non': 2000,
+     'choy': 1000,
+     "hot dog": 7000,
+     'gamburger': 13000
+     }
+print('3 ta taomga buyurtma bering:')
+buyurtma =[]
+for i in range (3):
+    buyurtma.append(input(f"{i+1}-taom:").lower())
+for taom in buyurtma:
+    if taom in taomlar:
+        print(f"{taom.title()} {taomlar[taom]} so'm")
+    else:
+        print('Bunday taom yo\'q')
+
+ 
+ 
+ 
+ 
+ 
+ 
         
